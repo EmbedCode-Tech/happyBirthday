@@ -11,19 +11,11 @@ body {
 .fade-out {
   animation: fadeOut 0.6s forwards;
 }
-
 .fade-in {
   animation: fadeIn 1s ease-in;
 }
-
-@keyframes fadeOut {
-  to { opacity: 0; }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+@keyframes fadeOut { to { opacity: 0; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 /* HERO */
 .hero {
@@ -36,12 +28,17 @@ body {
 /* TEXT */
 h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #ff4b7d;
 }
+h2 { font-weight: 300; }
 
-.name {
-  font-size: 2rem;
+/* INPUT */
+input {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
 }
 
 /* BUTTON */
@@ -52,9 +49,7 @@ button {
   background: linear-gradient(45deg, #ff4b7d, #ff758c);
   color: white;
   cursor: pointer;
-  margin-top: 20px;
 }
-
 button:hover {
   transform: scale(1.1);
 }
@@ -77,7 +72,6 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .cards div {
   margin: 10px;
   padding: 20px;
@@ -107,12 +101,10 @@ section {
   height: 100%;
   pointer-events: none;
 }
-
 .hearts span {
   position: absolute;
   animation: fall linear infinite;
 }
-
 .hearts span:nth-child(1) { left: 10%; animation-duration: 8s; }
 .hearts span:nth-child(2) { left: 30%; animation-duration: 10s; }
 .hearts span:nth-child(3) { left: 50%; animation-duration: 7s; }
@@ -122,14 +114,4 @@ section {
 @keyframes fall {
   0% { top: -10%; }
   100% { top: 110%; }
-}
-
-/* PASSWORD INPUT */
-input {
-  padding: 12px;
-  border-radius: 25px;
-  border: none;
-  outline: none;
-  text-align: center;
-  font-size: 1rem;
 }
