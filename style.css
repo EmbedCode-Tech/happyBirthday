@@ -123,3 +123,13 @@ section {
   0% { top: -10%; }
   100% { top: 110%; }
 }
+
+/* PASSWORD INPUT */
+input {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+}
