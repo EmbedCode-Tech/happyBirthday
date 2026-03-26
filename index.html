@@ -25,22 +25,24 @@
 
   <input type="password" id="password" placeholder="Enter our secret ❤️">
   <br><br>
+
   <button onclick="checkPassword()">Unlock My Heart 🔐</button>
 
-  <p id="error" style="color: #ff758c;"></p>
+  <p id="error" style="color:#ff758c;"></p>
 </section>
 
 <script>
 function checkPassword() {
   const pass = document.getElementById("password").value;
 
-  if (pass === "2703") {   // 👉 CHANGE THIS PASSWORD
+  if (pass === "2703") {   // 🔥 CHANGE PASSWORD HERE
     document.body.classList.add("fade-out");
     setTimeout(() => {
       window.location.href = "surprise.html";
     }, 600);
   } else {
-    document.getElementById("error").innerText = "Wrong password 😢 Try again my love 💔";
+    document.getElementById("error").innerText =
+      "Wrong password 😢 Try again my love 💔";
   }
 }
 </script>
