@@ -26,6 +26,8 @@
   <input type="password" id="password" placeholder="Enter our secret ❤️">
   <br><br>
 
+  <p>Hint: The day my life changed ❤️</p>
+
   <button onclick="checkPassword()">Unlock My Heart 🔐</button>
 
   <p id="error" style="color:#ff758c;"></p>
@@ -35,7 +37,7 @@
 function checkPassword() {
   const pass = document.getElementById("password").value;
 
-  if (pass === "2703") {   // 🔥 CHANGE PASSWORD HERE
+  if (pass === "2212") {   
     document.body.classList.add("fade-out");
     setTimeout(() => {
       window.location.href = "surprise.html";
