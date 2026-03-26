@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday My Love ❤️</title>
+<title>Happy Birthday ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,17 +13,23 @@
 
 <div class="hearts"></div>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Happy Birthday 💖</h1>
   <h2 class="name">My Love</h2>
-  <button onclick="scrollToSection()">Start Our Story ✨</button>
+
+  <a href="#message">
+    <button id="startBtn">Start Our Story ✨</button>
+  </a>
 </section>
 
-<section class="message hidden">
+<!-- MESSAGE -->
+<section id="message" class="message hidden">
   <h2>💌 For You</h2>
   <p id="typing"></p>
 </section>
 
+<!-- GALLERY -->
 <section class="gallery hidden">
   <h2>Our Memories 📸</h2>
   <div class="photos">
@@ -33,6 +39,7 @@
   </div>
 </section>
 
+<!-- LOVE -->
 <section class="love hidden">
   <h2>Why I Love You ❤️</h2>
   <div class="cards">
@@ -43,6 +50,7 @@
   </div>
 </section>
 
+<!-- FINAL -->
 <section class="final hidden">
   <h1>Forever Yours ❤️</h1>
   <button onclick="showFinal()">Open My Heart 🎁</button>
@@ -52,7 +60,8 @@
   <h1>I LOVE YOU FOREVER ❤️</h1>
 </div>
 
-<audio autoplay loop>
+<!-- MUSIC (plays after click) -->
+<audio id="music" loop>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
 
