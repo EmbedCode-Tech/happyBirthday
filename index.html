@@ -11,60 +11,30 @@
 
 <body>
 
-<div class="hearts"></div>
+<div class="hearts">
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
+  <span>❤️</span>
+</div>
 
-<!-- HERO -->
 <section class="hero">
   <h1>Happy Birthday 💖</h1>
   <h2 class="name">My Love</h2>
 
-  <a href="#message">
-    <button id="startBtn">Start Our Story ✨</button>
-  </a>
+  <button onclick="goToPage()">Start Our Story ✨</button>
 </section>
 
-<!-- MESSAGE -->
-<section id="message" class="message hidden">
-  <h2>💌 For You</h2>
-  <p id="typing"></p>
-</section>
+<script>
+function goToPage() {
+  document.body.classList.add("fade-out");
+  setTimeout(() => {
+    window.location.href = "surprise.html";
+  }, 600);
+}
+</script>
 
-<!-- GALLERY -->
-<section class="gallery hidden">
-  <h2>Our Memories 📸</h2>
-  <div class="photos">
-    <img src="images/photo1.jpg">
-    <img src="images/photo2.jpg">
-    <img src="images/photo3.jpg">
-  </div>
-</section>
-
-<!-- LOVE -->
-<section class="love hidden">
-  <h2>Why I Love You ❤️</h2>
-  <div class="cards">
-    <div>Your smile 😊</div>
-    <div>Your voice 🎶</div>
-    <div>Your kindness 💕</div>
-    <div>Everything about you 💖</div>
-  </div>
-</section>
-
-<!-- FINAL -->
-<section class="final hidden">
-  <h1>Forever Yours ❤️</h1>
-  <button onclick="showFinal()">Open My Heart 🎁</button>
-</section>
-
-<div id="finalMessage" class="final-message">
-  <h1>I LOVE YOU FOREVER ❤️</h1>
-</div>
-
-<!-- MUSIC (plays after click) -->
-<audio id="music" loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<script src="script.js"></script>
 </body>
 </html>
