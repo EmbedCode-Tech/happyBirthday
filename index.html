@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday ❤️</title>
+<title>For Someone Special ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="fade-in">
 
 <div class="hearts">
-  <span>❤️</span>
   <span>❤️</span>
   <span>❤️</span>
   <span>❤️</span>
@@ -21,18 +20,28 @@
 </div>
 
 <section class="hero">
-  <h1>Happy Birthday 💖</h1>
-  <h2 class="name">My Love</h2>
+  <h1>💖 Secret Entry 💖</h1>
+  <h2>Only for My Love</h2>
 
-  <button onclick="goToPage()">Start Our Story ✨</button>
+  <input type="password" id="password" placeholder="Enter our secret ❤️">
+  <br><br>
+  <button onclick="checkPassword()">Unlock My Heart 🔐</button>
+
+  <p id="error" style="color: #ff758c;"></p>
 </section>
 
 <script>
-function goToPage() {
-  document.body.classList.add("fade-out");
-  setTimeout(() => {
-    window.location.href = "surprise.html";
-  }, 600);
+function checkPassword() {
+  const pass = document.getElementById("password").value;
+
+  if (pass === "2703") {   // 👉 CHANGE THIS PASSWORD
+    document.body.classList.add("fade-out");
+    setTimeout(() => {
+      window.location.href = "surprise.html";
+    }, 600);
+  } else {
+    document.getElementById("error").innerText = "Wrong password 😢 Try again my love 💔";
+  }
 }
 </script>
 
