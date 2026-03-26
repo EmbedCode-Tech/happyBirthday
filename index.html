@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Happy Birthday ❤️</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="hero">
-  <h1>Happy Birthday My Love 🎂</h1>
-  <h2 id="name">To My Beautiful Girl 💖</h2>
-  <button onclick="showSurprise()">Click for Surprise 🎁</button>
-</div>
+<div class="hearts"></div>
 
-<section class="message">
-  <h2>💌 A Message For You</h2>
-  <p>
-    You are the most special person in my life.  
-    Every moment with you feels magical.  
-    I’m so lucky to have you ❤️  
-    Happy Birthday, my love 🎂✨
-  </p>
+<section class="hero">
+  <h1>Happy Birthday 💖</h1>
+  <h2 class="name">My Love</h2>
+  <button onclick="scrollToSection()">Start Our Story ✨</button>
 </section>
 
-<section class="gallery">
-  <h2>📸 Our Memories</h2>
+<section class="message hidden">
+  <h2>💌 For You</h2>
+  <p id="typing"></p>
+</section>
+
+<section class="gallery hidden">
+  <h2>Our Memories 📸</h2>
   <div class="photos">
     <img src="images/photo1.jpg">
     <img src="images/photo2.jpg">
@@ -32,18 +33,23 @@
   </div>
 </section>
 
-<section class="love">
-  <h2>❤️ Why I Love You</h2>
-  <ul>
-    <li>Your smile 😊</li>
-    <li>Your kindness 💕</li>
-    <li>Your cute talks 😍</li>
-    <li>Everything about you 💖</li>
-  </ul>
+<section class="love hidden">
+  <h2>Why I Love You ❤️</h2>
+  <div class="cards">
+    <div>Your smile 😊</div>
+    <div>Your voice 🎶</div>
+    <div>Your kindness 💕</div>
+    <div>Everything about you 💖</div>
+  </div>
 </section>
 
-<div id="surprise" class="hidden">
-  <h1>I Love You Forever ❤️</h1>
+<section class="final hidden">
+  <h1>Forever Yours ❤️</h1>
+  <button onclick="showFinal()">Open My Heart 🎁</button>
+</section>
+
+<div id="finalMessage" class="final-message">
+  <h1>I LOVE YOU FOREVER ❤️</h1>
 </div>
 
 <audio autoplay loop>
