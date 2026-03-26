@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -13,7 +17,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: transparent;
 }
 
 .hero h1 {
@@ -27,6 +30,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* BUTTON */
 button {
   padding: 12px 30px;
   border-radius: 30px;
@@ -48,14 +52,14 @@ section {
   min-height: 100vh;
   padding: 60px 20px;
   text-align: center;
-  backdrop-filter: blur(10px);
 }
 
 /* GLASS EFFECT */
 .message, .gallery, .love, .final {
   background: rgba(255,255,255,0.05);
   border-radius: 20px;
-  margin: 40px;
+  margin: 60px;
+  backdrop-filter: blur(10px);
 }
 
 /* PHOTOS */
@@ -99,7 +103,7 @@ section {
   color: #ff4b7d;
 }
 
-/* HIDDEN */
+/* SCROLL ANIMATION */
 .hidden {
   opacity: 0;
   transform: translateY(50px);
@@ -111,9 +115,9 @@ section {
   transform: translateY(0);
 }
 
-/* HEART ANIMATION */
+/* HEARTS */
 .hearts::before {
-  content: "❤️ ❤️ ❤️ ❤️ ❤️";
+  content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
   position: fixed;
   top: -10%;
   width: 100%;
