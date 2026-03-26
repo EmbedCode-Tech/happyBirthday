@@ -76,7 +76,11 @@ section {
   border-radius: 10px;
 }
 
-
+.final-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  color: #ff4d6d;
+}
 .final-message {
   display: none;
   position: fixed;
